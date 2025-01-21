@@ -17,15 +17,15 @@ environment{
 
     stages {
 
-        stage('Build') {
+        // stage('Build') {
 
-            steps {
+        //     steps {
 
-                sh "mvn clean install"
+        //         sh "mvn clean install"
 
-            }
+        //     }
 
-        }
+        // }
         stage('SonarQube analysis') {
             environment {
                 scannerHome = tool 'sonarscanner'
